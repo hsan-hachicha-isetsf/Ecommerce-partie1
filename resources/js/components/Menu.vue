@@ -8,13 +8,13 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-            <router-link to="/listcateg" class="nav-item navlink">Categories</router-link>
+            <router-link to="/listcateg" class="nav-link">Categories</router-link>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">S/Categories</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Articles</a>
+          <router-link to="/listarticles" class="nav-link">articles</router-link>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
