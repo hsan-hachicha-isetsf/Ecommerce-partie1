@@ -2,6 +2,8 @@ import Accueil from './components/Accueil.vue';
 import Viewcategorie from "./components/categories/Viewcategorie.vue"
 import Addcategory from "./components/categories/Addcategory.vue"
 import Viewarticles from "./components/articles/Viewarticles.vue"
+import Addarticle from "./components/articles/addarticle.vue"
+import Editarticle from "./components/articles/Editarticle.vue"
 export const routes = [
 {
 name: 'accueil',
@@ -25,6 +27,15 @@ component: Accueil
             component:Viewarticles
         },
     
-
+        {
+            name:"Addarticle",
+            path:"/addarticle",
+            component:Addarticle
+            },
+            {
+                name:"editarticle",
+                path:"/editarticle/:id",
+                component:Editarticle
+                },
 
 ];

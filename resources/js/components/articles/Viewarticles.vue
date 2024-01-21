@@ -4,6 +4,13 @@
         <h1>En cours de chargement ...</h1>
     </div>
     <div v-else class="container" >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<div class="container-fluid">
+<router-link :to="{name: 'Addarticle'}" class="btn btnoutline-light">
+<i class="fa-solid fa-square-plus"></i> New Article
+</router-link>
+</div>
+</nav>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -25,9 +32,11 @@
                     <td>{{ art.qtestock }}</td>
                     <td>{{ art.prix }}</td>
                     <td>{{ art.marque }}</td>
-                    <td><button class="btn btn-warning">
+                    <td><router-link :to="{name: 'editarticle', params: { id: art.id }}" class="btn btn-warning"> 
                         <i class="fa-solid fa-pen-to-square"></i>
-                        Update</button></td>
+                        Update
+                    </router-link>
+                </td>
                     <td><button class="btn btn-danger" @click="deletearticle(art.id)">
                         <i class="fa-solid fa-trash"></i>
                         Delete</button></td>
